@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="icon" href="devchallenges.png" />
+
+  <title>My Team Page</title>
+
+  <style>
+    /* for devices larger than width: 768px */
+    @media (min-width: 768px) {
+
+      /* first and third cols */
+      .profile:nth-child(3n-2),
+      .profile:nth-child(3n) {
+        padding-bottom: 4rem;
+      }
+
+      /* second col */
+      .profile:nth-child(3n-1) {
+        padding-top: 4rem;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container w-full mx-auto px-6">
+    <div class="flex flex-col space-y-10 md:flex-row md:space-y-0 my-[4rem]">
+      <div class="flex-1 font-bold text-[3rem] md:max-lg:text-[2.2rem] mt-2">The creative crew</div>
+      <div class="flex-1">
+        <div class="font-bold text-2xl md:max-lg:text-xl mb-3 uppercase">Who we are</div>
+        <div class="w-full lg:w-3/4 text-xl md:max-lg:text-lg">
+          We are team of creatively diverse. driven. innovative individuals working in various locations from the world.
+        </div>
+      </div>
+    </div>
+    <div class="grid gap-x-8 gap-y-4 lg:gap-x-20 xl:gap-x-28 grid-cols-2 md:grid-cols-3">
+      <div class="min-w-min max-md:odd:pb-16 max-md:even:pt-16 profile">
+        <div class="flex">
+          <img class="min-w-[130px]" src="./photo1.png" alt="photo">
+          <p class="uppercase text-[0.8rem] px-1" style="writing-mode: vertical-rl">
+            Product owner
+          </p>
+        </div>
+        <h2 class="font-bold text-xl pt-4">Bill Mahoney</h2>
+      </div>
+      <div class="min-w-min max-md:odd:pb-16 max-md:even:pt-16 profile">
+        <div class="flex">
+          <img class="min-w-[130px]" src="./photo2.png" alt="photo">
+          <p class="uppercase text-[0.8rem] px-1" style="writing-mode: vertical-rl">
+            Art director
+          </p>
+        </div>
+        <h2 class="font-bold text-xl pt-4">Saba Cabrera</h2>
+      </div>
+      <div class="min-w-min max-md:odd:pb-16 max-md:even:pt-16 profile">
+        <div class="flex">
+          <img class="min-w-[130px]" src="./photo3.png" alt="photo">
+          <p class="uppercase text-[0.8rem] px-1" style="writing-mode: vertical-rl">
+            Tech Lead
+          </p>
+        </div>
+        <h2 class="font-bold text-xl pt-4">Shae Le</h2>
+      </div>
+      <div class="min-w-min max-md:odd:pb-16 max-md:even:pt-16 profile">
+        <div class="flex">
+          <img class="min-w-[130px]" src="./photo4.png" alt="photo">
+          <p class="uppercase text-[0.8rem] px-1" style="writing-mode: vertical-rl">
+            UX Designer
+          </p>
+        </div>
+        <h2 class="font-bold text-xl pt-4">Skylah Lu</h2>
+      </div>
+      <div class="min-w-min max-md:odd:pb-16 max-md:even:pt-16 profile">
+        <div class="flex">
+          <img class="min-w-[130px]" src="./photo5.png" alt="photo">
+          <p class="uppercase text-[0.8rem] px-1" style="writing-mode: vertical-rl">
+            Developer
+          </p>
+        </div>
+        <h2 class="font-bold text-xl pt-4">Griff Richards</h2>
+      </div>
+      <div class="min-w-min max-md:odd:pb-16 max-md:even:pt-16 profile">
+        <div class="flex">
+          <img class="min-w-[130px]" src="./photo6.png" alt="photo">
+          <p class="uppercase text-[0.8rem] px-1" style="writing-mode: vertical-rl">
+            Deverloper
+          </p>
+        </div>
+        <h2 class="font-bold text-xl pt-4">Stan John</h2>
+      </div>
+    </div>
+    <footer class="flex justify-center align-center pt-16 pb-6 font-semi text-small text-[#A9A9A9]">
+      created by Satishpokala124 - devChallenges.io
+    </footer>
+  </div>
+</body>
+
+</html>
